@@ -35,7 +35,7 @@ pipeline{
          }
         stage('port expose'){
             steps{
-                sh 'docker run -itd -p 8084:8081 --name c003 myimg3'
+                sh 'docker run -itd -p 8084:8081 shubhamkushwah123/insure-me:3.0'
             }
         }   
     }
