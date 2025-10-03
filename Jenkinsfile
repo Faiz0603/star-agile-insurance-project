@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout the code from github'){
             steps{
-                 git url: 'https://github.com/Faiz0603/pro1.git'
+                 git url: 'https://github.com/Faiz0603/star-agile-insurance-project.git'
                  echo 'github url checkout'
             }
         }
@@ -35,7 +35,7 @@ pipeline{
          }
         stage('port expose'){
             steps{
-                sh 'docker run -itd -p 8084:8084 --name c003 myimg3'
+                sh 'docker run -itd -p 8084:8081 --name c003 myimg3'
             }
         }   
     }
